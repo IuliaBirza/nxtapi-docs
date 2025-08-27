@@ -1,0 +1,7 @@
+site_name: Nxt API Docs
+theme:
+  name: material
+
+nav:
+  - Employee:
+      - "Check If Employee Exists": Employee/CheckIfEmployeeExists.md
