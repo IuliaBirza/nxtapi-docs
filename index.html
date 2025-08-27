@@ -6,6 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Comprehensive API documentation for Nxt services">
+      
+      
+        <meta name="author" content="Nxt Development Team">
       
       
       
@@ -18,11 +22,14 @@
     
     
       
-        <title>Nxt API Docs</title>
+        <title>Nxt API Documentation</title>
       
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -51,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -72,11 +86,9 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Nxt API Docs" class="md-header__button md-logo" aria-label="Nxt API Docs" data-md-component="logo">
+    <a href="." title="Nxt API Documentation" class="md-header__button md-logo" aria-label="Nxt API Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -90,7 +102,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Nxt API Docs
+            Nxt API Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -102,6 +114,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -133,6 +171,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -158,6 +198,56 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="Employee/CheckIfEmployeeExists/" class="md-tabs__link">
+          
+  
+  
+  Employee
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -171,16 +261,18 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Nxt API Docs" class="md-nav__button md-logo" aria-label="Nxt API Docs" data-md-component="logo">
+    <a href="." title="Nxt API Documentation" class="md-nav__button md-logo" aria-label="Nxt API Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Nxt API Docs
+    Nxt API Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -244,16 +336,64 @@
         <li class="md-nav__item">
   <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      🚀 Getting Started
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🚀 Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Navigation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#available-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
-      Available Endpoints
+      📚 Available Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Available Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#employee-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 API Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 How to Use This Documentation
     </span>
   </a>
   
@@ -262,7 +402,7 @@
         <li class="md-nav__item">
   <a href="#support" class="md-nav__link">
     <span class="md-ellipsis">
-      Support
+      🆘 Support
     </span>
   </a>
   
@@ -286,12 +426,19 @@
     
     
     
+      
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -373,16 +520,64 @@
         <li class="md-nav__item">
   <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      🚀 Getting Started
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🚀 Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Navigation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#available-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
-      Available Endpoints
+      📚 Available Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Available Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#employee-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 API Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 How to Use This Documentation
     </span>
   </a>
   
@@ -391,7 +586,7 @@
         <li class="md-nav__item">
   <a href="#support" class="md-nav__link">
     <span class="md-ellipsis">
-      Support
+      🆘 Support
     </span>
   </a>
   
@@ -413,17 +608,42 @@
 
 
 
-<h1 id="nxt-api-documentation">Nxt API Documentation</h1>
-<p>Welcome to the Nxt API documentation. This site contains comprehensive documentation for the Nxt API endpoints.</p>
-<h2 id="getting-started">Getting Started</h2>
-<p>Browse the documentation using the navigation menu on the left to find the API endpoints you need.</p>
-<h2 id="available-endpoints">Available Endpoints</h2>
+<h1 id="nxt-api-documentation">Nxt API Documentation<a class="headerlink" href="#nxt-api-documentation" title="Permanent link">&para;</a></h1>
+<p>Welcome to the comprehensive Nxt API documentation. This site provides detailed information about all available API endpoints, authentication methods, and usage examples.</p>
+<h2 id="getting-started">🚀 Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<p>The Nxt API provides access to various services and data. Browse the documentation using the navigation menu to find the specific endpoints you need.</p>
+<h3 id="quick-navigation">Quick Navigation<a class="headerlink" href="#quick-navigation" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Employee API</strong> - Employee-related operations</li>
-<li><a href="Employee/CheckIfEmployeeExists/">Check If Employee Exists</a></li>
+<li><strong><a href="Employee/CheckIfEmployeeExists/">Employee API</a></strong> - Employee management operations</li>
+<li>More endpoints coming soon...</li>
 </ul>
-<h2 id="support">Support</h2>
-<p>For additional support or questions, please refer to the individual endpoint documentation pages.</p>
+<h2 id="available-endpoints">📚 Available Endpoints<a class="headerlink" href="#available-endpoints" title="Permanent link">&para;</a></h2>
+<h3 id="employee-management">Employee Management<a class="headerlink" href="#employee-management" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Check If Employee Exists</strong> - Verify employee existence in the system</li>
+<li><a href="Employee/CheckIfEmployeeExists/">View Documentation</a></li>
+</ul>
+<h2 id="api-features">🔧 API Features<a class="headerlink" href="#api-features" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>RESTful Design</strong> - Standard HTTP methods and status codes</li>
+<li><strong>JSON Responses</strong> - All responses are in JSON format</li>
+<li><strong>Authentication</strong> - Secure API access with proper authentication</li>
+<li><strong>Rate Limiting</strong> - Built-in protection against abuse</li>
+</ul>
+<h2 id="how-to-use-this-documentation">📖 How to Use This Documentation<a class="headerlink" href="#how-to-use-this-documentation" title="Permanent link">&para;</a></h2>
+<p>Each endpoint page includes:
+- <strong>Endpoint URL</strong> and HTTP method
+- <strong>Request parameters</strong> and headers
+- <strong>Response examples</strong> with status codes
+- <strong>Error handling</strong> information
+- <strong>Code examples</strong> in multiple languages</p>
+<h2 id="support">🆘 Support<a class="headerlink" href="#support" title="Permanent link">&para;</a></h2>
+<p>For additional support or questions:
+- Check the individual endpoint documentation pages
+- Review the response examples and error codes
+- Contact the development team for technical issues</p>
+<hr />
+<p><em>Last updated: August 2025</em></p>
 
 
 
@@ -443,6 +663,12 @@
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -472,7 +698,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
