@@ -3,5 +3,6 @@ theme:
   name: material
 
 nav:
+  - Home: index.md
   - Employee:
       - "Check If Employee Exists": Employee/CheckIfEmployeeExists.md
